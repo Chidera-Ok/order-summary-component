@@ -123,16 +123,6 @@ body {
     color: black;
 }
 
-.attribution {
-    font-size: 0.6rem;
-    text-align: center;
-    color: var(--white)
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
 
 /* Extra small devices (phones, 600px and down) */
 
