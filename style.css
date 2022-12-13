@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+    min-height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.inner-container {
+    padding: 10px 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.inner-container>* {
+    margin: 13px 0;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.order-description {
+    line-height: 1.5;
+}
+
+.plan-container {
+    background-color: var(--very-pale-blue);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan-container a {
+    color: var(--bright-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-container h2 {
+    color: var(--dark-blue);
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.plan-description {
+    text-align: left;
+    margin-right: 1rem;
+}
+
+.btn-1 {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: rgb(224, 218, 218);
+    border: none;
+    font-weight: 700;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.btn-1:hover {
+    opacity: 0.8;
+}
+
+.btn-2 {
+    background-color: white;
+    color: var(--desaturated-blue);
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.btn-2:hover {
+    color: black;
+}
+
+.attribution {
+    font-size: 0.6rem;
+    text-align: center;
+    color: var(--white)
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        height: 80%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+        height: 70%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 50%;
+        height: 70%;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 30%;
+        height: 60%;
+    }
+}
